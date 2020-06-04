@@ -116,6 +116,7 @@ namespace Minesweeper
                 }
             }
         }
+        
         int CountFlags(int posY, int posX)
         {
             int count = 0;
@@ -132,6 +133,7 @@ namespace Minesweeper
             }
             return count;
         }
+        
         void NewGame(int posY, int posX)
         {
             //создаем список координат всех клеток поля, чтобы потом перемешать пары и получить случайное местоположение бомб
@@ -179,6 +181,7 @@ namespace Minesweeper
                 }
             }
         }
+        
         public void Reset()
         {
             foreach (Mine mine in Mines)
@@ -189,6 +192,7 @@ namespace Minesweeper
             FlagsCount = 0;
             Time = 0;
         }
+        
         public void SetFlags(int value)
         {
             minesLeft.Text = $"{MinesCount - value}/{MinesCount}";
